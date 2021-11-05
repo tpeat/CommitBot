@@ -22,4 +22,4 @@ jobs:
       - name: execute main script
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
-        run: python scripts/main.py
+        run: python3 scripts/main.py
