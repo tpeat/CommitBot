@@ -9,7 +9,7 @@ from consts import CONST
 
 load_dotenv()
 
-g = Github(os.getenv("GITHUB_TOKEN"))
+g = Github(os.getenv("TOKEN"))
 user = g.get_user()
 
 if CONST.REPO_NAME not in [repo.name for repo in user.get_repos()]:
